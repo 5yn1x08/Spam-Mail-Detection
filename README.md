@@ -29,17 +29,17 @@ The script will load the training data, preprocess it, train a Naive Bayes class
 ## Code Explanation
 The code is structured as follows:
 
-### Loading and Preprocessing Data: The training data is loaded from the emails_dataset.csv file, and any NaN values in the "Message" column are filled with empty strings.
+**Loading and Preprocessing Data:** The training data is loaded from the emails_dataset.csv file, and any NaN values in the "Message" column are filled with empty strings.
 
-### Feature Extraction: The CountVectorizer is used to convert the text data into a bag-of-words representation. This is essential for training the Naive Bayes classifier.
+**Feature Extraction:** The CountVectorizer is used to convert the text data into a bag-of-words representation. This is essential for training the Naive Bayes classifier.
 
-### Train-Test Split: The dataset is split into training and testing sets using the train_test_split function from scikit-learn.
+**Train-Test Split:** The dataset is split into training and testing sets using the train_test_split function from scikit-learn.
 
-### Model Training: A Multinomial Naive Bayes classifier is trained using the training data.
+**Model Training:** A Multinomial Naive Bayes classifier is trained using the training data.
 
-### Model Evaluation: The model is evaluated on the test set, and a classification report is printed, providing insights into its performance.
+**Model Evaluation:** The model is evaluated on the test set, and a classification report is printed, providing insights into its performance.
 
-### Testing the Model: The trained model is applied to a new dataset (test_emails.csv), and the predictions are displayed alongside the original messages.
+**Testing the Model:** The trained model is applied to a new dataset (test_emails.csv), and the predictions are displayed alongside the original messages.
 
 ## Results
 The classification report printed after model evaluation provides information about the precision, recall, and F1-score for each class. Additionally, the predictions on the test dataset are presented in a DataFrame for further analysis.
