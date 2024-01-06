@@ -1,31 +1,35 @@
 
-#Email Classification using Naive Bayes
+# Email Classification using Naive Bayes
 
-##Overview
+## Overview
 This repository contains a simple implementation of an email classification model using the Naive Bayes algorithm. The model is trained on a labeled dataset of emails, distinguishing between different classifications such as spam and ham. Additionally, the trained model is tested on a separate dataset to evaluate its performance.
 
-##Installation
+## Installation
 To run the code, make sure you have the required Python libraries installed. You can install them using the following:
 
-bash
+```bash
 Copy code
-pip install numpy pandas scikit-learn
-Usage
+pip install numpy pandas scikit-learne
+```
+## Usage
 Clone the repository:
-bash
+
+```bash
 Copy code
 git clone https://github.com/yourusername/email-classification.git
 cd email-classification
+```
 Download the training dataset (emails_dataset.csv) and test dataset (test_emails.csv) and place them in the project folder.
 
 Run the provided Python script:
 
-bash
+```bash
 Copy code
 python email_classification.py
+```
 The script will load the training data, preprocess it, train a Naive Bayes classifier, and then evaluate its performance on a test dataset. The classification report will be printed, showing metrics such as precision, recall, and F1-score.
 
-##Code Explanation
+## Code Explanation
 The code is structured as follows:
 
 Loading and Preprocessing Data: The training data is loaded from the emails_dataset.csv file, and any NaN values in the "Message" column are filled with empty strings.
@@ -40,7 +44,7 @@ Model Evaluation: The model is evaluated on the test set, and a classification r
 
 Testing the Model: The trained model is applied to a new dataset (test_emails.csv), and the predictions are displayed alongside the original messages.
 
-##Results
+## Results
 The classification report printed after model evaluation provides information about the precision, recall, and F1-score for each class. Additionally, the predictions on the test dataset are presented in a DataFrame for further analysis.
 
 Feel free to modify the script, tweak parameters, or use your own datasets to experiment with different configurations.
