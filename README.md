@@ -22,7 +22,7 @@ Download the training dataset (emails_dataset.csv) and test dataset (test_emails
 Run the provided Python script:
 
 ```bash
-python email_classification.py
+python spam_detector.py
 ```
 The script will load the training data, preprocess it, train a Naive Bayes classifier, and then evaluate its performance on a test dataset. The classification report will be printed, showing metrics such as precision, recall, and F1-score.
 
